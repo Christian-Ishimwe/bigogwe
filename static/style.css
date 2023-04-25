@@ -87,7 +87,9 @@ div.login{
 	margin: 10px auto;
 }
 div.alert{
-	background-color: greenyellow;
+	background-color: #008400;
+	padding: 20px 10px;
+	text-align: center;
 }
 
 div.container-welcome{
