@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container block-content">
+<table class="table table-bordered table-hover  table-responsive">
+    <tr><th class="col">Name</th><th class="col">Email</th><th class="col">Tel</th><th class="col">Number</th><th class="col">Date</th><th class="col">Total</th></tr>
+    {%for user in useradmin%}
+    {%if user['email']!=mainadmin and user['pin']!=mainpin%}
+    <tr><td>No user exist with those credentials</td></tr>
+    {%else%}
+    <tr><td >{{user['name']}}</td><td>{{user['email']}}</td><td>{{user['tel']}}</td><td>{{user['nbr_people']}}</td><td>{{user['price']}}</td><td>{{user['date']}}</td></tr>
+    {%endif%}
+    {%endfor%}
+</table>
+</div>
+{% endblock content %}

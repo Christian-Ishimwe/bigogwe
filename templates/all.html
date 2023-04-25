@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<table >
+    <tr><th>Name</th><th>Email</th><th>Tel</th><th>Number</th><th>Date</th><th>Total</th></tr>
+    {%for user in useradmin%}
+    <tr><td>{{user['name']}}</td><td>{{user['email']}}</td><td>{{user['tel']}}</td><td>{{user['nbr_people']}}</td><td>{{user['date']}}</td><td>{{user['price']}}</td></tr>
+    {%endfor%}
+</table>
+
+{% endblock content %}

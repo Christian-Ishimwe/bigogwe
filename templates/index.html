@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="block-content">
+    <h1>Welcome note</h1>
+    <div class="container-welcome">
+        Welcome to Visit Bigogwe Booking service    
+        <div>
+        <a class="btn sub" href="{{url_for('register')}}">Book</a><a href="{{url_for('admin')}}" class="res">View Booking</a>
+    </div>
+    </div>
+</div>
+    
+{% endblock content %}

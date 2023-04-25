@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="block-content">
+    <h1>Book your tour</h1>
+    <div class="form-div">
+        <form method="post" action="{{url_for('register')}}">
+            <fieldset>
+                <legend>Book Tour</legend>
+                <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" required><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" required>
+            </div>
+            <div>
+                <label for="teleph">Telephone: </label>
+                <input type="tel" name="telephy" required><br>
+                <label for="num_p">Number of people:</label>
+                <input type="number" name="num_p" required>
+            </div>
+            <div>
+                <label for="date">Date: </label>
+                <input type="date" name="date" required> <br>
+                <label for="pin">Pin: </label>
+                <input name="pin" type="password" type="password" maxlength="4" min="4">
+                <button type="submit" class="sub"> Book</button>
+                <button type="reset" class="res">Reset</button>
+            </div>
+            </fieldset>
+        </form>
+    </div> 
+
+</div>
+
+{% endblock content %}
