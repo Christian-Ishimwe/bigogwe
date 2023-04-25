@@ -88,8 +88,9 @@ div.login{
 }
 div.alert{
 	background-color: #008400;
-	padding: 20px 10px;
+	padding: 15px 10px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 div.container-welcome{
